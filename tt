@@ -1,0 +1,3056 @@
+-- This file was protected using Luraph Obfuscator v15.2 [https://lura.ph/]
+return setmetatable({
+	hP = function(a, ...)
+		local b = type
+		local c = (a and a[33]) or math.floor
+		local d = a.N
+		local e = b(b)
+		local f = 5381
+		local g = (e == b(getgenv) and getgenv()) or (a and a[30] and e == b(a[30]) and a[30]()) or (e == b(getfenv) and getfenv()) or _ENV or _G
+		local h = (a and a[253]) or string.char
+		local i = (a and a[217]) or table.concat
+		local j = a[204]
+		local k = {
+			[1] = a[1325],
+			[2] = a[6496],
+			[3] = a[3733],
+			[4] = a[822],
+			[5] = a[6924],
+			[6] = a[6900],
+			[7] = a[10253],
+			[8] = a[1830]
+		}
+		local function l(m, n)
+			local o = (m * a[5716] + (n % a[5716]))
+			local p = c((m * a[9801] + a[11431]) / a[11877]) % a[822]
+			local q = c(n / a[822])
+			return j(j(o, p), q) % a[822]
+		end
+		local function m(n)
+			local o, p = {}, # n
+			local q = a[7896] % a[1830]
+			for r = 1, p do
+				local s = n[r]
+				local t = ((r - 1 + a[7896]) % a[3566]) + 1
+				local u = (a[7896] * a[11275] + r * a[7823] + a[9579]) % a[1830]
+				local v = (u * a[7481] + q + a[6455]) % a[1830]
+				local w = (v * a[2750] + a[297] * r + a[9801]) % a[1830]
+				local x = k[t]
+				local y = k[a[3733] - t]
+				local z = (c(s / x) + (s % x) * y) % a[1830]
+				local A = c(z / a[822])
+				local B = z % a[822]
+				local C = j(B, l(A, w))
+				B = A
+				A = C
+				C = j(B, l(A, v))
+				B = A
+				A = C
+				C = j(B, l(A, u))
+				B = A
+				A = C
+				local D = (A * a[822] + B) % a[1830]
+				f = (f * 33 + D) % 2147483647
+				o[r] = h(D)
+				q = (q * a[5542] + s + a[6591]) % a[1830]
+			end
+			f = (f * 31 + # o) % 2147483647
+			return i(o)
+		end
+		local function n(o, p)
+			local q = m(o)
+			local r = (g and g[q])
+			if r == nil and e == b(getfenv) then
+				local s = getfenv()
+				r = s and s[q]
+			end
+			if r == nil and _G then
+				r = _G[q]
+			end
+			if p then
+				local s = m(p)
+				return r and r[s]
+			end
+			return r
+		end
+		local o = n({
+			a[9823],
+			a[7942],
+			a[6074],
+			a[3729],
+			a[2964],
+			a[7238]
+		}, {
+			a[352],
+			a[7715],
+			a[5601],
+			a[1062]
+		})
+		local p = n({
+			a[9823],
+			a[7942],
+			a[6074],
+			a[3729],
+			a[2964],
+			a[7238]
+		}, {
+			a[9823],
+			a[3729],
+			a[3154]
+		})
+		local q = n({
+			a[9823],
+			a[7942],
+			a[6074],
+			a[3729],
+			a[2964],
+			a[7238]
+		}, {
+			a[6970],
+			a[1927],
+			a[3643],
+			a[10549]
+		})
+		local r = n({
+			a[4755],
+			a[8688],
+			a[4563],
+			a[7179],
+			a[7069]
+		}, {
+			a[3226],
+			a[5102],
+			a[6887],
+			a[418],
+			a[5364],
+			a[3685]
+		})
+		local s = n({
+			a[9579],
+			a[847],
+			a[11226],
+			a[1062]
+		}, {
+			a[5150],
+			a[1842],
+			a[8804]
+		})
+		local t = n({
+			a[9579],
+			a[847],
+			a[11226],
+			a[1062]
+		}, {
+			a[4910],
+			a[4685],
+			a[10129],
+			a[9574],
+			a[4294]
+		})
+		local u = a[30]
+		local v = n({
+			a[9823],
+			a[7817],
+			a[11294],
+			a[6319],
+			a[5061],
+			a[9579],
+			a[9391],
+			a[1955],
+			a[5061],
+			a[9710],
+			a[7681],
+			a[6896]
+		})
+		local w = n({
+			a[9823],
+			a[7817],
+			a[6964],
+			a[3442],
+			a[8836],
+			a[2603]
+		})
+		local x = (unpack or n({
+			a[4755],
+			a[8688],
+			a[4563],
+			a[7179],
+			a[7069]
+		}, {
+			a[9549],
+			a[9801],
+			a[5823],
+			a[4910],
+			a[8688],
+			a[4910]
+		}))
+		local y = a[43]
+		local z = n({
+			a[5238],
+			a[10470],
+			a[1040],
+			a[9675]
+		})
+		local A = n({
+			a[6887],
+			a[3524],
+			a[5601],
+			a[11370],
+			a[9801]
+		})
+		if g then
+			local B = m({
+				a[297],
+				a[7942],
+				a[1040],
+				a[3729],
+				a[5364],
+				a[9737],
+				a[9402],
+				a[8530],
+				a[10272],
+				a[11367],
+				a[8971],
+				a[9946],
+				a[7888],
+				a[1975]
+			})
+			A(function()
+				g[B] = true
+			end)
+		end
+		local B = a[74]
+		local C = a[249]
+		local D = a[37]
+		local E = a[114]
+		local F = {}
+		local G = 1
+		local H = 1
+		local I = # d
+		while H <= I do
+			local J, K, L, M, N = o(d, H, H + 4)
+			local O = ((((J - 35) * 85 + (K - 35)) * 85 + (L - 35)) * 85 + (M - 35)) * 85 + (N - 35)
+			F[G] = h(c(O / 16777216) % 256, c(O / 65536) % 256, c(O / 256) % 256, O % 256)
+			G = G + 1
+			H = H + 5
+		end
+		local J = i(F)
+		local K, L, M, N = o(J, 1, 4)
+		local O = K + L * 256 + M * 65536 + N * 16777216
+		local P = p(J, 5, 4 + O)
+		local Q = h(j(126, 10), j(96, 5), j(96, 23), j(126, 10))
+		local R = ((Q:sub(2, 3) == p(Q, 2, 3)) and (Q:byte(1) == j(126, 10))) and 17 or 0
+		local S = ((2 ^ 53 + 1 == 2 ^ 53) and (2 ^ 52 + 1 ~= 2 ^ 52)) and 29 or 0
+		local T = ((b(b) == 'function') and 41 or 0)
+		local U = ((b(A) == 'function') and 53 or 0)
+		local V = (R * 3 + S * 5 + T * 7 + U * 11) % 256
+		local W = j(57, V) % 256
+		local X = {}
+		for Y = 1, O do
+			local Z = o(P, Y)
+			local _ = (W * 83 + Y * 79 + 19 + V - 42) % 256
+			local aa = (Z - _) % 256
+			if aa < 0 then
+				aa = aa + 256
+			end
+			X[Y] = h((aa * 161) % 256)
+			W = (W * 103 + Z + 25) % 256
+		end
+		local aa = i(X)
+		local Y = 0
+		local Z = # aa
+		for _ = 1, Z do
+			Y = (Y * 31 + o(aa, _)) % 2147483647
+		end
+		if Y ~= 313774914 then
+			return
+		end
+		local _ = Y
+		local ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, as, at, au, av, aw, ax, ay, az, aA, aB, aC, aD, aE, aF, aG, aH, aI, aJ, aK, aL, aM, aN, aO, aP, aQ, aR, aS, aT, aU, aV, aW, aX, aY
+		local aZ = a[11877]
+		repeat
+			if aZ >= a[1325] then
+				if aZ <= a[1325] then
+					aZ = a[10297]
+					ay = ay or function(a_)
+						local a0
+						local a1 = a[10297]
+						repeat
+							if a1 >= a[1325] then
+								if a1 >= a[11877] then
+									a1 = a[1955]
+									for a2 = 1, # a_ do
+										a0[a2] = h(ao(a_[a2], (173 * 29 + a2 * 43) % 256))
+									end
+								else
+									break
+								end
+							else
+								if a1 <= a[1955] then
+									a1 = a[1325]
+									return i(a0)
+								else
+									a1 = a[11877]
+									a0 = {}
+								end
+							end
+						until false
+					end
+				else
+					if aZ >= a[6496] then
+						break
+					else
+						aZ = a[1955]
+						ao = ao or function(a_, a0)
+							local a1, a2
+							local a3 = a[6496]
+							repeat
+								if a3 >= a[11877] then
+									if a3 >= a[6496] then
+										a3 = a[1325]
+										a2, a1 = 1, 0
+									else
+										a3 = a[10297]
+										while a_ > 0 do
+											local a4
+											local a5 = a[1955]
+											repeat
+												if a5 >= a[1325] then
+													if a5 >= a[11877] then
+														a5 = a[10297]
+														if a4 > 0 then
+															a1 = a1 + a2
+														end
+													else
+														break
+													end
+												else
+													if a5 >= a[10297] then
+														a5 = a[1325]
+														a_, a2 = (a_ - a4) / 2, a2 * 2
+													else
+														a5 = a[11877]
+														a4 = a_ % 2
+													end
+												end
+											until false
+										end
+									end
+								else
+									if a3 >= a[10297] then
+										if a3 >= a[1325] then
+											a3 = a[1955]
+											while a_ > 0 and a0 > 0 do
+												local a4, a5
+												local a6 = a[1955]
+												repeat
+													if a6 >= a[1325] then
+														if a6 >= a[11877] then
+															break
+														else
+															a6 = a[11877]
+															a_, a0, a2 = (a_ - a5) / 2, (a0 - a4) / 2, a2 * 2
+														end
+													else
+														if a6 >= a[10297] then
+															a6 = a[1325]
+															if a5 ~= a4 then
+																a1 = a1 + a2
+															end
+														else
+															a6 = a[10297]
+															a5, a4 = a_ % 2, a0 % 2
+														end
+													end
+												until false
+											end
+										else
+											break
+										end
+									else
+										a3 = a[11877]
+										if a_ < a0 then
+											a_ = a0
+										end
+									end
+								end
+							until false
+							return a1
+						end
+					end
+				end
+			else
+				if aZ >= a[10297] then
+					aZ = a[6496]
+					aD = aD or function(a_, a0)
+						local a1
+						local a2 = a[10297]
+						repeat
+							if a2 <= a[10297] then
+								if a2 >= a[10297] then
+									a2 = a[1955]
+									a1 = ab[ay(a_)]
+								else
+									a2 = a[1325]
+									if a0 then
+										return a1 and a1[ay(a0)]
+									end
+								end
+							else
+								if a2 >= a[11877] then
+									break
+								else
+									a2 = a[11877]
+									return a1
+								end
+							end
+						until false
+					end
+				else
+					aZ = a[1325]
+					ab = ab or (b(b) == b(getgenv) and getgenv()) or (b(b) == b(getfenv) and getfenv()) or _ENV or _G
+				end
+			end
+		until false
+		local a_ = a[11877]
+		repeat
+			if a_ <= a[10297] then
+				if a_ <= a[1955] then
+					a_ = a[6496]
+					aQ = aQ or function(a0, a1)
+						local a2, a3
+						local a4 = a[6496]
+						repeat
+							if a4 <= a[10297] then
+								if a4 >= a[10297] then
+									a4 = a[1955]
+									while a0 > 0 and a1 > 0 do
+										local a5, a6
+										local a7 = a[1955]
+										repeat
+											if a7 >= a[11877] then
+												if a7 <= a[11877] then
+													a7 = a[1325]
+													a0 = c(a0 / 2)
+												else
+													a7 = a[11877]
+													if a6 == 1 and a5 == 1 then
+														a2 = a2 + a3
+													end
+												end
+											else
+												if a7 <= a[1955] then
+													a7 = a[10297]
+													a6 = a0 % 2
+												else
+													if a7 >= a[1325] then
+														break
+													else
+														a7 = a[6496]
+														a5 = a1 % 2
+													end
+												end
+											end
+										until false
+										local a8 = a[1325]
+										repeat
+											if a8 <= a[1955] then
+												break
+											else
+												if a8 <= a[10297] then
+													a8 = a[1955]
+													a3 = a3 * 2
+												else
+													a8 = a[10297]
+													a1 = c(a1 / 2)
+												end
+											end
+										until false
+									end
+								else
+									a4 = a[1325]
+									return a2
+								end
+							else
+								if a4 >= a[11877] then
+									if a4 >= a[6496] then
+										a4 = a[11877]
+										a2 = 0
+									else
+										a4 = a[10297]
+										a3 = 1
+									end
+								else
+									break
+								end
+							end
+						until false
+					end
+				else
+					a_ = a[1325]
+					aw, au = nil
+				end
+			else
+				if a_ <= a[1325] then
+					break
+				else
+					if a_ >= a[6496] then
+						a_ = a[10297]
+						aK = aK or function(a0, a1)
+							local a2, a3
+							local a4 = a[6496]
+							repeat
+								if a4 <= a[10297] then
+									if a4 >= a[10297] then
+										a4 = a[1955]
+										a3 = 1
+									else
+										a4 = a[1325]
+										while a0 > 0 or a1 > 0 do
+											local a5, a6
+											local a8 = a[1325]
+											repeat
+												if a8 <= a[10297] then
+													if a8 <= a[1955] then
+														a8 = a[11877]
+														a6 = a1 % 2
+													else
+														break
+													end
+												else
+													if a8 <= a[1325] then
+														a8 = a[1955]
+														a5 = a0 % 2
+													else
+														if a8 >= a[6496] then
+															a8 = a[10297]
+															a0 = c(a0 / 2)
+														else
+															a8 = a[6496]
+															if a5 == 1 or a6 == 1 then
+																a2 = a2 + a3
+															end
+														end
+													end
+												end
+											until false
+											local a9 = a[1955]
+											repeat
+												if a9 >= a[10297] then
+													if a9 >= a[1325] then
+														a9 = a[10297]
+														a3 = a3 * 2
+													else
+														break
+													end
+												else
+													a9 = a[1325]
+													a1 = c(a1 / 2)
+												end
+											until false
+										end
+									end
+								else
+									if a4 <= a[1325] then
+										a4 = a[11877]
+										return a2
+									else
+										if a4 >= a[6496] then
+											a4 = a[10297]
+											a2 = 0
+										else
+											break
+										end
+									end
+								end
+							until false
+						end
+					else
+						a_ = a[1955]
+						as = 2 ^ 32
+					end
+				end
+			end
+		until false
+		local a0 = a[1325]
+		repeat
+			if a0 >= a[11877] then
+				if a0 <= a[11877] then
+					a0 = a[10297]
+					aw = aw or function(a1, a2)
+						local a3 = a[1325]
+						repeat
+							if a3 >= a[10297] then
+								if a3 <= a[10297] then
+									break
+								else
+									a3 = a[1955]
+									if a2 < 0 then
+										return au(a1, - a2)
+									end
+								end
+							else
+								a3 = a[10297]
+								return (a1 * 2 ^ a2) % as
+							end
+						until false
+					end
+				else
+					a0 = a[1955]
+					aP = o('L') - 76
+				end
+			else
+				if a0 >= a[10297] then
+					if a0 <= a[10297] then
+						a0 = a[6496]
+						aF = w('#', 1, 2, 3) - 3
+					else
+						a0 = a[11877]
+						au = au or function(a1, a2)
+							local a3 = a[1955]
+							repeat
+								if a3 <= a[1955] then
+									a3 = a[1325]
+									if a2 < 0 then
+										return aw(a1, - a2)
+									end
+								else
+									if a3 >= a[1325] then
+										a3 = a[10297]
+										return c(a1 % as / 2 ^ a2)
+									else
+										break
+									end
+								end
+							until false
+						end
+					end
+				else
+					break
+				end
+			end
+		until false
+		local a1 = a[6496]
+		repeat
+			if a1 <= a[1955] then
+				a1 = a[10297]
+				az = c(12.75) - 12
+			else
+				if a1 >= a[11877] then
+					if a1 >= a[6496] then
+						a1 = a[1955]
+						aC = (ao(1234, 5678) - 4860)
+					else
+						a1 = a[1325]
+						aR = aQ(255, 128) - 128
+					end
+				else
+					if a1 >= a[1325] then
+						break
+					else
+						a1 = a[11877]
+						aT = s(- 42) - 42
+					end
+				end
+			end
+		until false
+		local a2 = a[1325]
+		repeat
+			if a2 <= a[10297] then
+				if a2 <= a[1955] then
+					a2 = a[10297]
+					aJ = ((2 ^ 53 + 1 == 2 ^ 53) and (2 ^ 52 + 1 ~= 2 ^ 52)) and 29 or 0
+				else
+					a2 = a[6496]
+					aL = ((b(b) == 'function') and 41 or 0)
+				end
+			else
+				if a2 >= a[11877] then
+					if a2 >= a[6496] then
+						break
+					else
+						a2 = a[1955]
+						aW = ((at:sub(2, 3) == p(at, 2, 3)) and (at:byte(1) == ao(126, 10))) and 17 or 0
+					end
+				else
+					a2 = a[11877]
+					at = h(ao(126, 10), ao(96, 5), ao(96, 23), ao(126, 10))
+				end
+			end
+		until false
+		local a3 = a[11877]
+		repeat
+			if a3 >= a[1325] then
+				if a3 <= a[1325] then
+					a3 = a[10297]
+					ap = ((# aa > 0) and 71 or 0)
+				else
+					if a3 >= a[6496] then
+						a3 = a[1955]
+						aj = 0
+					else
+						a3 = a[1325]
+						aN = ((b(A) == 'function') and 53 or 0)
+					end
+				end
+			else
+				if a3 >= a[10297] then
+					a3 = a[6496]
+					aE = (aW * 3 + aJ * 5 + aL * 7 + aN * 11 + ap * 13) % 256
+				else
+					break
+				end
+			end
+		until false
+		local a4 = a[1325]
+		repeat
+			if a4 <= a[1955] then
+				a4 = a[6496]
+				aM = 0
+			else
+				if a4 <= a[1325] then
+					if a4 >= a[1325] then
+						a4 = a[11877]
+						ac = {}
+					else
+						break
+					end
+				else
+					if a4 >= a[6496] then
+						a4 = a[10297]
+						do
+							local a5, a6, a8, a9 = z, ac
+							repeat
+								a8, a9 = a5(a6, a8)
+								if not a8 then
+									break
+								end
+								aM = (aM * 31 + o(a8, 2, 2) + a9) % 4294967296
+							until false
+						end
+					else
+						a4 = a[1955]
+						for a5 = 1, 5 do
+							ac[h(ao(126, 33), ao(96, a5))] = a5
+						end
+					end
+				end
+			end
+		until false
+		local a5 = a[1955]
+		repeat
+			if a5 >= a[10297] then
+				if a5 <= a[1325] then
+					if a5 >= a[1325] then
+						a5 = a[11877]
+						ae = 313774914
+					else
+						a5 = a[6496]
+						ai = 0
+					end
+				else
+					if a5 >= a[6496] then
+						break
+					else
+						a5 = a[10297]
+						ad = ad or ae
+					end
+				end
+			else
+				a5 = a[1325]
+				aH = aM
+			end
+		until false
+		local a6 = a[6496]
+		repeat
+			if a6 >= a[10297] then
+				if a6 >= a[11877] then
+					if a6 >= a[6496] then
+						a6 = a[1325]
+						aj = 0
+					else
+						a6 = a[1955]
+						ak = 0
+					end
+				else
+					if a6 <= a[10297] then
+						a6 = a[11877]
+						aB = 0
+					else
+						a6 = a[10297]
+						aU = ao(ao(57, 197), aE)
+					end
+				end
+			else
+				break
+			end
+		until false
+		local a8 = a[1325]
+		repeat
+			if a8 >= a[1325] then
+				if a8 >= a[11877] then
+					if a8 >= a[6496] then
+						break
+					else
+						a8 = a[1955]
+						ar = 1
+					end
+				else
+					a8 = a[11877]
+					ag = function()
+						return 0
+					end
+				end
+			else
+				if a8 <= a[1955] then
+					a8 = a[10297]
+					an = ao(186, aB)
+				else
+					a8 = a[6496]
+					aS = function()
+						local a9, ba, bb, bc
+						local bd = a[1325]
+						repeat
+							if bd >= a[1325] then
+								if bd >= a[11877] then
+									break
+								else
+									bd = a[1955]
+									ba, a9, bb, bc = o(aa, ar, ar + 3)
+								end
+							else
+								if bd >= a[10297] then
+									bd = a[11877]
+									return ((ao(bc, an) * 256 + ao(bb, an)) * 256 + ao(a9, an)) * 256 + ao(ba, an)
+								else
+									bd = a[10297]
+									ar = ar + 4
+								end
+							end
+						until false
+					end
+				end
+			end
+		until false
+		local a9 = a[6496]
+		repeat
+			if a9 >= a[1325] then
+				if a9 >= a[11877] then
+					if a9 >= a[6496] then
+						a9 = a[11877]
+						aV = function()
+							local ba
+							local bb = a[11877]
+							repeat
+								if bb >= a[1325] then
+									if bb >= a[11877] then
+										bb = a[1955]
+										ba = ao(o(aa, ar, ar), an)
+									else
+										bb = a[10297]
+										return ba
+									end
+								else
+									if bb <= a[1955] then
+										bb = a[1325]
+										ar = ar + 1
+									else
+										break
+									end
+								end
+							until false
+						end
+					else
+						a9 = a[1325]
+						aO = function(ba, bb)
+							return c(ba / bb)
+						end
+					end
+				else
+					a9 = a[10297]
+					aq = function()
+						local ba, bb
+						local bc = a[1955]
+						repeat
+							if bc <= a[10297] then
+								if bc >= a[10297] then
+									bc = a[11877]
+									return ao(ba, an) * 256 + ao(bb, an)
+								else
+									bc = a[1325]
+									bb, ba = o(aa, ar, ar + 1)
+								end
+							else
+								if bc <= a[1325] then
+									bc = a[10297]
+									ar = ar + 2
+								else
+									break
+								end
+							end
+						until false
+					end
+				end
+			else
+				if a9 >= a[10297] then
+					a9 = a[1955]
+					av = function(ba)
+						return (- 1 - ba) % as
+					end
+				else
+					break
+				end
+			end
+		until false
+		local ba = a[6496]
+		repeat
+			if ba >= a[10297] then
+				if ba <= a[1325] then
+					if ba <= a[10297] then
+						break
+					else
+						ba = a[11877]
+						ah = function()
+							local bb, bc, bd
+							local be = a[1325]
+							repeat
+								if be <= a[1325] then
+									if be >= a[10297] then
+										if be <= a[10297] then
+											break
+										else
+											be = a[6496]
+											bb = 0
+										end
+									else
+										be = a[10297]
+										repeat
+											local bf = a[1955]
+											repeat
+												if bf >= a[1325] then
+													if bf >= a[11877] then
+														if bf <= a[11877] then
+															break
+														else
+															bf = a[11877]
+															bc = bc * 128
+														end
+													else
+														bf = a[6496]
+														bb = bb + (bd % 128) * bc
+													end
+												else
+													if bf >= a[10297] then
+														bf = a[1325]
+														ar = ar + 1
+													else
+														bf = a[10297]
+														bd = ao(o(aa, ar, ar), an)
+													end
+												end
+											until false
+										until bd < 128
+									end
+								else
+									if be >= a[6496] then
+										be = a[11877]
+										bc = 1
+									else
+										be = a[1955]
+										bd = nil
+									end
+								end
+							until false
+							return bb
+						end
+					end
+				else
+					if ba >= a[6496] then
+						ba = a[1955]
+						af = function()
+							local bb, bc, bd
+							local be = a[10297]
+							repeat
+								if be <= a[10297] then
+									if be >= a[10297] then
+										be = a[1325]
+										bb, bc, bd = o(aa, ar, ar + 2)
+									else
+										be = a[11877]
+										return ((ao(bd, an) * 256 + ao(bc, an)) * 256) + ao(bb, an)
+									end
+								else
+									if be >= a[11877] then
+										break
+									else
+										be = a[1955]
+										ar = ar + 3
+									end
+								end
+							until false
+						end
+					else
+						ba = a[10297]
+						aX = {}
+					end
+				end
+			else
+				ba = a[1325]
+				aY = {}
+			end
+		until false
+		local bb = a[10297]
+		repeat
+			if bb >= a[1325] then
+				if bb <= a[1325] then
+					bb = a[11877]
+					ay = ay or function(bc)
+						local bd
+						local be = a[1955]
+						repeat
+							if be >= a[1325] then
+								if be >= a[11877] then
+									be = a[10297]
+									return i(bd)
+								else
+									be = a[11877]
+									for bf = 1, # bc do
+										bd[bf] = h(ao(bc[bf], (173 * 29 + bf * 43) % 256))
+									end
+								end
+							else
+								if be >= a[10297] then
+									break
+								else
+									be = a[1325]
+									bd = {}
+								end
+							end
+						until false
+					end
+				else
+					if bb <= a[11877] then
+						break
+					else
+						bb = a[1325]
+						al = function(...)
+							return {
+								...
+							}, w('#', ...)
+						end
+					end
+				end
+			else
+				if bb <= a[1955] then
+					bb = a[6496]
+					ax = function(bc)
+						local bd = aS()
+						if (bd == 0) then
+							return ''
+						end
+						local be = p(aa, ar, ar + bd - 1)
+						ar = ar + bd
+						local bf = {}
+						local bg = ao(an, aU)
+						local bh = (bg * 37 + bd * 19) % 256
+						for bi = 1, # be do
+							local bj = o(p(be, bi, bi))
+							local bk = (bh + (bi * 29) + (ao(bd, bi) * 7)) % 256
+							local bl = ao(bj, bk)
+							bh = (bh * 33 + bl + 11) % 256
+							bf[bi] = h(bl)
+						end
+						return i(bf)
+					end
+				else
+					bb = a[1955]
+					aA = function()
+						local bc, bd, be, bf, bg
+						local bh = a[1955]
+						repeat
+							if bh >= a[11877] then
+								if bh <= a[11877] then
+									bh = a[10297]
+									be = c((bg % 2147483648) / 1048576)
+								else
+									bh = a[1325]
+									if bc == 0 and bg == 0 then
+										return 0
+									end
+								end
+							else
+								if bh <= a[1955] then
+									bh = a[6496]
+									bc, bg = aS(), aS()
+								else
+									if bh >= a[1325] then
+										bh = a[11877]
+										bd = (bg >= 2147483648) and - 1 or 1
+									else
+										break
+									end
+								end
+							end
+						until false
+						local bi = a[11877]
+						repeat
+							if bi <= a[10297] then
+								if bi >= a[10297] then
+									bi = a[1955]
+									if (be == 0) then
+										if (bf == 0) then
+											return bd * 0
+										else
+											return bd * t(bf, - 1074)
+										end
+									elseif (be == 2047) then
+										return (bf == 0) and (bd * (1 / 0)) or (bd * (0 / 0))
+									end
+								else
+									bi = a[1325]
+									return bd * (t(1, be - 1023) + t(bf, be - 1075))
+								end
+							else
+								if bi <= a[1325] then
+									break
+								else
+									bi = a[10297]
+									bf = (bg % 1048576) * 4294967296 + bc
+								end
+							end
+						until false
+					end
+				end
+			end
+		until false
+		local bc = a[10297]
+		repeat
+			if bc <= a[10297] then
+				if bc <= a[1955] then
+					bc = a[11877]
+					am = function()
+						local bd = {}
+						local be = {}
+						bd[50] = {}
+						for bf = 1, ah() do
+							bd[50][bf - 1] = am()
+						end
+						bd[218] = {}
+						for bf = 1, ah() do
+							local bg = aV()
+							local bi = {
+								[227] = ah(),
+								[96] = aq()
+							}
+							if (bg == 42) then
+								bi[29] = af()
+								bi[186] = af()
+								bi[27] = aq()
+								bi[15] = aS()
+							elseif (bg == 127) then
+								bi[29] = aS()
+							elseif (bg == 211) then
+								bi[29] = aS() - 131072
+							elseif (bg == 88) then
+								bi[29] = aS() - 131072
+								bi[186] = af()
+								bi[27] = aq()
+								bi[15] = aS()
+							end
+							bd[218][bf] = bi
+						end
+						bd[61] = ao(aq(), an)
+						local bf = aS()
+						local bg = {}
+						for bi = 1, bf do
+							local bj = aV()
+							if (bj == 1) then
+								bg[bi] = (aV() ~= 0)
+							elseif (bj == 0) then
+								bg[bi] = aA()
+							elseif (bj == 3) then
+								local bk = aV()
+								if bk == 1 then
+									bg[bi] = aI()
+								elseif bk == 2 then
+									local bl = aV()
+									local bm = ax()
+									local bn = {}
+									for bo = 1, # bm do
+										bn[bo] = o(bm, bo, bo)
+									end
+									bg[bi] = {
+										bn,
+										bl
+									}
+								else
+									local bl = aS()
+									local bm = {}
+									for bn = 1, bl do
+										bm[bn] = aV()
+									end
+									bg[bi] = {
+										bm,
+										bl,
+										bi
+									}
+								end
+							end
+						end
+						bd[173] = aG(bg)
+						return bd
+					end
+				else
+					bc = a[1325]
+					aI = function()
+						local bd = {}
+						bd[ay({
+							155,
+							176,
+							115,
+							43,
+							20,
+							254,
+							190
+						})] = function()
+							ak = ao(ak, 117)
+							return nil
+						end
+						bd[ay({
+							155,
+							176,
+							116,
+							32,
+							7,
+							242,
+							168,
+							149,
+							121,
+							63
+						})] = function()
+							ak = ao(ak, 121)
+						end
+						bd[ay({
+							155,
+							176,
+							110,
+							42,
+							3,
+							239,
+							180,
+							152,
+							114,
+							32
+						})] = function()
+							ak = ao(ak, 127)
+							return ''
+						end
+						return v({}, bd)
+					end
+				end
+			else
+				if bc >= a[11877] then
+					break
+				else
+					bc = a[1955]
+					aG = function(bd)
+						local be = {}
+						local bf = {}
+						local bg = {
+							[1] = 2,
+							[2] = 4,
+							[3] = 8,
+							[4] = 16,
+							[5] = 32,
+							[6] = 64,
+							[7] = 128,
+							[8] = 256
+						}
+						local function bi(bj, bk)
+							local bl = (bj * 7 + (bk % 13))
+							local bm = c((bj * 5 + 3) / 2) % 16
+							local bn = c(bk / 16)
+							return ao(ao(bl, bm), bn) % 16
+						end
+						bf[h(95, 95, 105, 110, 100, 101, 120)] = function(bj, bk)
+							if bk == nil then
+								return nil
+							end
+							local bl = bd[bk]
+							if b(bl) == 'table' and bl[1] then
+								local bm = bl[1]
+								local bn = bl[2]
+								local bo = bl[3]
+								if bo then
+									local bp = (an * 37 + bo * 97 + bn * 13) % 256
+									local bq = (bp * 37 + bn * 19) % 256
+									local br = bp % 256
+									local bs = {}
+									for bt = 1, bn do
+										local bu = bm[bt]
+										local bv = (bq + (bt * 29) + (ao(bn, bt) * 7)) % 256
+										local bw = ao(bu, bv)
+										bq = (bq * 33 + bu + 11) % 256
+										local bx = ((bt - 1 + bp) % 5) + 1
+										local by = (bp * 31 + bt * 67 + 17) % 256
+										local bz = (by * 41 + br + 73) % 256
+										local bA = (bz * 19 + (bo + 1) * bt * 23 + 5) % 256
+										local bB = bg[bx]
+										local bC = bg[8 - bx]
+										local bD = (c(bw / bB) + (bw % bB) * bC) % 256
+										local bE = c(bD / 16)
+										local bF = bD % 16
+										local bG = ao(bF, bi(bE, bA))
+										bF = bE
+										bE = bG
+										local bH = ao(bF, bi(bE, bz))
+										bF = bE
+										bE = bH
+										local bI = ao(bF, bi(bE, by))
+										bF = bE
+										bE = bI
+										local bJ = (bE * 16 + bF) % 256
+										br = (br * 37 + bw + 13) % 256
+										bs[bt] = h(bJ)
+									end
+									local bt = i(bs)
+									bd[bk] = bt
+									bj[bk] = bt
+									bl[1] = nil
+									return bt
+								else
+									local bp = ((_lcgGate or 0) - bn) % 256
+									local bq = {}
+									for br = 1, # bm do
+										bq[br] = h((bm[br] - bp) % 256)
+									end
+									local br = i(bq)
+									bd[bk] = br
+									bj[bk] = br
+									bl[1] = nil
+									return br
+								end
+							end
+							if bl ~= nil then
+								bj[bk] = bl
+							end
+							return bl
+						end
+						bf[h(95, 95, 110, 101, 119, 105, 110, 100, 101, 120)] = function(bj, bk, bl)
+							if bk ~= nil then
+								rawset(bj, bk, bl)
+							end
+						end
+						return (v or setmetatable)(be, bf)
+					end
+				end
+			end
+		until false
+		local bd = {
+			[21] = a.Bs,
+			[7] = a.MF,
+			[37] = a.oP,
+			[51] = a.Us,
+			[22] = a.tP,
+			[17] = a.VP,
+			[39] = a.w,
+			[33] = a.ds,
+			[46] = a.Q,
+			[43] = a.Ss,
+			[406] = a.dP,
+			[30] = a.t,
+			[15] = a.C,
+			[36] = a.wP,
+			[31] = a.g,
+			[47] = a.Z,
+			[4] = a.gs,
+			[1] = a.eP,
+			[26] = a.B,
+			[20] = a.bs,
+			[40] = a.Ms,
+			[5] = a.rP,
+			[6] = a.EE,
+			[156] = a.fP,
+			[2] = a.ZP,
+			[28] = a.sP,
+			[3] = a.n,
+			[35] = a.js,
+			[29] = a.SP,
+			[0] = a.l,
+			[32] = a.KP,
+			[41] = a.hs,
+			[9] = a.JP,
+			[49] = a.XP,
+			[11] = a.AP,
+			[48] = a.Ps,
+			[25] = a.Zs,
+			[14] = a.Ws,
+			[18] = a.jP,
+			[27] = a.X,
+			[10] = a.xP,
+			[23] = a.RR,
+			[50] = a.W,
+			[38] = a.S,
+			[34] = a.TF,
+			[16] = a.ts,
+			[42] = a.Xs,
+			[12] = a.MP,
+			[44] = a.Gs,
+			[45] = a.nP,
+			[19] = a.Os,
+			[8] = a.F,
+			[13] = a.qP,
+			[24] = a.h
+		}
+		local function be(bf, bg)
+			return function(...)
+				local bi = {
+					...
+				}
+				local bj = w('#', ...) - 1
+				local bk = ((ad % 1000003) * 31 + (aE or 0) * 13 + ((aU or 0) % 128)) % 2147483647
+				local bl = {
+					[16] = 1,
+					[18] = - 1,
+					[12] = {},
+					[1] = bf[173],
+					[21] = u(),
+					[24] = bg or {},
+					[6] = bf[50],
+					[29] = bf[218],
+					[11] = {},
+					[26] = 0,
+					[2] = {},
+					[10] = bi,
+					[20] = bj,
+					[13] = - 1,
+					[9] = bf[61],
+					[8] = be,
+					[3] = 1337 + (ad - ae),
+					[22] = ao((an * 1451254979 + aH) % 4294967296, aU),
+					[25] = bi,
+					[7] = bj,
+					[28] = bf,
+					[23] = {},
+					[19] = aX,
+					[4] = aY,
+					[15] = an,
+					[17] = ak,
+					[5] = aU,
+					[27] = bk
+				}
+				local bm = 0
+				local function bn(bo)
+					return bl[29][bo]
+				end
+				bl[14] = bn
+				local bo = bl[29]
+				local bp, bq
+				local br, bs, bt, bu, bv, bw, bx, by, bz, bA, bB, bC, bD, bE, bF, bG, bH, bI, bJ, bK, bL, bM
+				local bN = bl
+				local bO = true
+				while bO do
+					bp = bo[bN[16] ] or (bN[14] and bN[14](bN[16]))
+					if not bp then
+						return
+					end
+					bv = bp[227]
+					if not bv then
+						return
+					end
+					if bv <= 26 then
+						if bv <= 12 then
+							if bv <= 5 then
+								if bv <= 2 then
+									if bv <= 0 then
+										bB, bM, by, bJ, bw, bH = a:l(bN, bp, bL, bH, bJ, bw, bK, bC, bM)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 1 then
+											bH, bF, bv, bz, bM, bw = a:eP(bN, bp, bA, bC, by, bM, bE)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bx, bA, bv, bE, bz, bD = a:ZP(bN, bp, bL, bE, bF, by, bv, bx)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								else
+									if bv <= 3 then
+										by, bx, bw, bA, bB, bG, bD = a:n(bN, bp, by, bL, bG, bx, bB, bA, bI)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 4 then
+											bB, bG, by, bA, bw, bD = a:gs(bN, bp, bJ, bD, bL, bB)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bK, bv, bH, bD, bE, bI, bx = a:rP(bN, bp, bG, bD, bK, bI, bw, bz, bE)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							else
+								if bv <= 8 then
+									if bv <= 6 then
+										bB, bD, bJ, bK, bw, bE = a:EE(bN, bp, bx, bH, bK, bM, bI, bw)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 7 then
+											bI, bA, bB, bM, bv, bC, bz = a:MF(bN, bp, by, bv, bI, bE, bH, bD)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bz, bC, bD, bE, bA, bL, by, bv = a:F(bN, bp, bG, bD, bA, bE)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								else
+									if bv <= 10 then
+										if bv <= 9 then
+											bD, bB, bC, bx, bz, bM, bI = a:JP(bN, bp, bL, bD, bw, bv, bE, bA, bG)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											by, bC, bE, bx, bG = a:xP(bN, bp, bz, bH, bJ, bM, bD)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									else
+										if bv <= 11 then
+											bC, bz, bK, bB, by, bD = a:AP(bN, bp, bF, bw, bG, bH)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bC, bM, bA, bJ, by, bD, bK = a:MP(bN, bp, bF, bB, bC)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							end
+						else
+							if bv <= 16 then
+								if bv <= 14 then
+									if bv <= 13 then
+										bx, by, bv, bE, bJ = a:qP(bN, bp, bI, bC, bH, bM)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bI, bG, bE, bJ, bz, bF, bH = a:Ws(bN, bp, bv, by, bD, bw, bE, bL)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								else
+									if bv <= 15 then
+										bE, bG, bJ, bI, bM, bx, bv = a:C(bN, bp, bv, bD, bM, bK, bG, bA)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bI, by, bA, bx = a:ts(bN, bp, bC, bL, by, bE)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								end
+							elseif bv <= 20 then
+								if bv <= 18 then
+									if bv <= 17 then
+										bG, bz, bC, bE, bx = a:VP(bN, bp, bC, bx, bK)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bI, bM, bD, bv, bB, bK, bG, bJ = a:jP(bN, bp, bF, bD, bJ)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								else
+									if bv <= 19 then
+										bH, bI, bB, bG, bC, bD, bE, bA = a:Os(bN, bp, bz, bC, bF, bx, bv, bI)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bz, bK, bL, bx, bB, bC, bv, bM = a:bs(bN, bp, bz, by, bC, bH, bL)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								end
+							else
+								if bv <= 22 then
+									if bv <= 21 then
+										bv, bw, by, bz, bx, bL = a:Bs(bN, bp, bx, bF, bJ)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bx, bE, bG, bK, by = a:tP(bN, bp, bF, bM, bw, bz)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								elseif bv <= 24 then
+									if bv <= 23 then
+										bL, bJ, bK, bI = a:RR(bN, bp, by, bG, bH, bB, bI, bJ, bF)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bH, bA, bL, bD, bx = a:h(bN, bp, bC, bG, bB, bv, bK)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								else
+									if bv <= 25 then
+										bF, bB, bG, bv, bx, bw, bM = a:Zs(bN, bp, bD, by, bM, bL, bE, bA)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bE, bG, bA, bz = a:B(bN, bp, bB, bE, by)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								end
+							end
+						end
+					else
+						if bv <= 39 then
+							if bv <= 32 then
+								if bv <= 29 then
+									if bv <= 27 then
+										bG, bF, bD, bI, bB, bK, bJ, bL = a:X(bN, bp, bM, bw, bF)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 28 then
+											bE, bI, bz, bJ, bw, bK, bD, bH = a:sP(bN, bp, bE, bv, bI)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											br, bs, bt, bu, bM, bK, bz, bJ, bG, bE, bD, bw = a:SP(bN, bp, bM, bz, bC, bH, bI, bx, bD)
+											if br then
+												if br == a[10297] then
+													return
+												elseif br == a[9801] then
+													return x(bN[12], bs)
+												elseif br == a[3566] then
+													return bs(x(bN[12], bt, bu))
+												elseif br == a[5498] then
+													return bs()
+												elseif br == a[1325] then
+													return bs
+												elseif br == a[6496] then
+													return x(bN[12], bs, bt)
+												elseif br == a[11877] then
+													return bs, bt
+												end
+											end
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								else
+									if bv <= 30 then
+										br, bs, bt, bu, bD, bK, bA, bG, bL, bx, bI, bM = a:t(bN, bp, bC, bx, bK, bJ, bE)
+										if br then
+											if br == a[10297] then
+												return
+											elseif br == a[9801] then
+												return x(bN[12], bs)
+											elseif br == a[3566] then
+												return bs(x(bN[12], bt, bu))
+											elseif br == a[5498] then
+												return bs()
+											elseif br == a[1325] then
+												return bs
+											elseif br == a[6496] then
+												return x(bN[12], bs, bt)
+											elseif br == a[11877] then
+												return bs, bt
+											end
+										end
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 31 then
+											bJ, bw, bD, by, bI = a:g(bN, bp, bC, bL, bD, bG, bF, bv)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bF, bI, bH, bz = a:KP(bN, bp, bw, bB, bA, bF, bv, bC)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							else
+								if bv <= 34 then
+									if bv <= 33 then
+										bI, bx, bz, bK = a:ds(bN, bp, by, bE, bF)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bz, bE, bL, bw, bI, bv, bB = a:TF(bN, bp, bG, bF, bx, bM)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								elseif bv <= 36 then
+									if bv <= 35 then
+										bz, bJ, bw, bM = a:js(bN, bp, bC, bI, bF, bH, bK, bz, bx)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										bH, bG, bE, bw, bv = a:wP(bN, bp, bG, bC, bI, bK, bD, bz)
+										bN[16] = bN[16] + 1
+										continue
+									end
+								else
+									if bv <= 37 then
+										bv, bz, bC, bJ = a:oP(bN, bp, bI, bB, bH, bJ, bM, bx, bv)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 38 then
+											bF, bI, bE, bC = a:S(bN, bp, bC, bH, bD, bF, bM, bA)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bC, bH, bJ, bM, bL, bw, bF = a:w(bN, bp, bv, bE, bx, bC)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							end
+						else
+							if bv <= 46 then
+								if bv <= 42 then
+									if bv <= 40 then
+										bA, bH, bE, bG = a:Ms(bN, bp, bI, bD, bv, by, bB)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 41 then
+											br, bs, bt, bu, bx, bG, bD, bv, bw, bF, bJ, bH = a:hs(bN, bp, bB, bE, bH, bF)
+											if br then
+												if br == a[10297] then
+													return
+												elseif br == a[9801] then
+													return x(bN[12], bs)
+												elseif br == a[3566] then
+													return bs(x(bN[12], bt, bu))
+												elseif br == a[5498] then
+													return bs()
+												elseif br == a[1325] then
+													return bs
+												elseif br == a[6496] then
+													return x(bN[12], bs, bt)
+												elseif br == a[11877] then
+													return bs, bt
+												end
+											end
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bC, bz, bF, bK, bG, bL = a:Xs(bN, bp, by, bz, bE)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								else
+									if bv <= 44 then
+										if bv <= 43 then
+											by, bB, bG, bH, bz = a:Ss(bN, bp, bJ, bz, bF, bA, bv, bB)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bL, bv, bD, bE = a:Gs(bN, bp, bJ, bM, bI, bv, bw)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									else
+										if bv <= 45 then
+											bw, bJ, by, bC, bI, bz = a:nP(bN, bp, bB, bD, bI, bL, bH, bC)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bA, bI, bF, bL, bM, bE, bH, bz = a:Q(bN, bp, bM, bL, bK)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							else
+								if bv <= 49 then
+									if bv <= 47 then
+										bE, bx, bD, bB, bM, bH, bI, bC = a:Z(bN, bp, bM, bv, bG, bI, bA)
+										bN[16] = bN[16] + 1
+										continue
+									else
+										if bv <= 48 then
+											bA, bE, by, bD, bx, bJ, bz = a:Ps(bN, bp, bC, bM, bI, bG, bx, bH)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bB, bz, bC, bw, bH, bL = a:XP(bN, bp, by, bx, bD, bK, bH)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								else
+									if bv <= 51 then
+										if bv <= 50 then
+											by, bF, bA, bE, bI, bK, bH = a:W(bN, bp, bz, bM, by, bv, bD, bG, bE)
+											bN[16] = bN[16] + 1
+											continue
+										else
+											bJ, bv, bH, bA, bG, by = a:Us(bN, bp, bA, bv, bF, bJ, bH, bC, bz)
+											bN[16] = bN[16] + 1
+											continue
+										end
+									else
+										if bv <= 156 then
+											br, bs, bt, bu, bC, bG, bJ, bx, bv, bD, bB, bF = a:fP(bN, bp, bB, bH, bA)
+											if br then
+												if br == a[10297] then
+													return
+												elseif br == a[9801] then
+													return x(bN[12], bs)
+												elseif br == a[3566] then
+													return bs(x(bN[12], bt, bu))
+												elseif br == a[5498] then
+													return bs()
+												elseif br == a[1325] then
+													return bs
+												elseif br == a[6496] then
+													return x(bN[12], bs, bt)
+												elseif br == a[11877] then
+													return bs, bt
+												end
+											end
+											bN[16] = bN[16] + 1
+											continue
+										else
+											br, bs, bt, bu, bM, by, bI, bF, bC, bL = a:dP(bN, bp, by, bB, bG, bK, bJ)
+											if br then
+												if br == a[10297] then
+													return
+												elseif br == a[9801] then
+													return x(bN[12], bs)
+												elseif br == a[3566] then
+													return bs(x(bN[12], bt, bu))
+												elseif br == a[5498] then
+													return bs()
+												elseif br == a[1325] then
+													return bs
+												elseif br == a[6496] then
+													return x(bN[12], bs, bt)
+												elseif br == a[11877] then
+													return bs, bt
+												end
+											end
+											bN[16] = bN[16] + 1
+											continue
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+		local bf = c or math.floor
+		local function bg(bi)
+			local bj, bk = {}, 1
+			for bl = 1, # bi do
+				bj[bk] = string.char((bi[bl] - (115 + bl * 7)) % 256)
+				bk = bk + 1
+			end
+			return table.concat(bj)
+		end
+		local bi = (type(getgenv) == 'function' and getgenv()) or nil
+		local bj = (type(getfenv) == 'function' and getfenv()) or nil
+		local function bk(bl)
+			if bi and bi[bl] ~= nil then
+				return bi[bl]
+			end
+			if bj and bj[bl] ~= nil then
+				return bj[bl]
+			end
+			if _ENV and _ENV[bl] ~= nil then
+				return _ENV[bl]
+			end
+			if _G and _G[bl] ~= nil then
+				return _G[bl]
+			end
+			return nil
+		end
+		local bl = bk(bg({
+			238,
+			250,
+			248,
+			244
+		})) or type or typeof
+		local bm = bk(bg({
+			223,
+			243,
+			250,
+			254,
+			8
+		})) or error or function()
+			while true do
+			end
+		end
+		local bn = bk(bg({
+			234,
+			228,
+			233,
+			251,
+			2
+		})) or pcall or function(bn, ...)
+			return true, bn(...)
+		end
+		local function bo()
+			while true do
+			end
+		end
+		local bp = 250
+		while bp ~= 9999 do
+			if bp == 250 then
+				local bq = debug
+				if bl(bq) == bg({
+					238,
+					226,
+					234,
+					251,
+					251
+				}) and bl(bq[bg({
+					225,
+					230,
+					252,
+					247,
+					5,
+					12,
+					15
+				})]) == bg({
+					224,
+					246,
+					246,
+					242,
+					10,
+					6,
+					19,
+					25
+				}) then
+					if bq[bg({
+						225,
+						230,
+						252,
+						247,
+						5,
+						12,
+						15
+					})]() ~= nil then
+						bo()
+					end
+				end
+				bp = 413
+			elseif bp == 413 then
+				local function bq()
+					local br = Random
+					if bl(br) == bg({
+						238,
+						226,
+						234,
+						251,
+						251
+					}) and bl(br[bg({
+						232,
+						230,
+						255
+					})]) == bg({
+						224,
+						246,
+						246,
+						242,
+						10,
+						6,
+						19,
+						25
+					}) then
+						local bs, bt = br[bg({
+							232,
+							230,
+							255
+						})](12345), br[bg({
+							232,
+							230,
+							255
+						})](12345)
+						if bs[bg({
+							200,
+							230,
+							0,
+							3,
+							223,
+							11,
+							24,
+							16,
+							25,
+							30,
+							50
+						})](bs, 1, 1000000000) ~= bt[bg({
+							200,
+							230,
+							0,
+							3,
+							223,
+							11,
+							24,
+							16,
+							25,
+							30,
+							50
+						})](bt, 1, 1000000000) then
+							bm()
+						end
+					end
+					local bs = bit32
+					if bl(bs) == bg({
+						238,
+						226,
+						234,
+						251,
+						251
+					}) and bl(bs[bg({
+						220,
+						249,
+						247,
+						1
+					})]) == bg({
+						224,
+						246,
+						246,
+						242,
+						10,
+						6,
+						19,
+						25
+					}) then
+						if bs[bg({
+							220,
+							249,
+							247,
+							1
+						})](1, 3) ~= 2 or bs[bg({
+							230,
+							244,
+							240,
+							248,
+							252,
+							17
+						})](3, 2) ~= 12 then
+							bm()
+						end
+					end
+					local bt = utf8
+					if bl(bt) == bg({
+						238,
+						226,
+						234,
+						251,
+						251
+					}) and bl(bt[bg({
+						230,
+						230,
+						246
+					})]) == bg({
+						224,
+						246,
+						246,
+						242,
+						10,
+						6,
+						19,
+						25
+					}) then
+						if bt[bg({
+							230,
+							230,
+							246
+						})](bg({
+							226,
+							230,
+							244,
+							251,
+							5
+						})) == nil then
+							bm()
+						end
+					end
+					local bu = task
+					if bl(bu) == bg({
+						238,
+						226,
+						234,
+						251,
+						251
+					}) and bl(bu[bg({
+						237,
+						241,
+						233,
+						6,
+						4
+					})]) == bg({
+						224,
+						246,
+						246,
+						242,
+						10,
+						6,
+						19,
+						25
+					}) then
+						if bl(bu[bg({
+							222,
+							230,
+							238,
+							244,
+							8
+						})]) ~= bg({
+							224,
+							246,
+							246,
+							242,
+							10,
+							6,
+							19,
+							25
+						}) or bl(bu[bg({
+							222,
+							230,
+							244,
+							240,
+							15
+						})]) ~= bg({
+							224,
+							246,
+							246,
+							242,
+							10,
+							6,
+							19,
+							25
+						}) or bl(bu[bg({
+							221,
+							226,
+							246,
+							242,
+							251,
+							9
+						})]) ~= bg({
+							224,
+							246,
+							246,
+							242,
+							10,
+							6,
+							19,
+							25
+						}) then
+							bm()
+						end
+					end
+				end
+				if not bn(bq) then
+					bo()
+				end
+				bp = 745
+			elseif bp == 745 then
+				if bl(game) == bg({
+					239,
+					244,
+					237,
+					1,
+					250,
+					254,
+					24,
+					12
+				}) then
+					local function bq()
+						local br = game:GetService(bg({
+							204,
+							246,
+							246,
+							226,
+							251,
+							15,
+							26,
+							20,
+							21,
+							30
+						}))
+						if not (br:IsClient() or br:IsServer()) or (br:IsClient() == br:IsServer()) then
+							bm()
+						end
+						local bs = Enum[bg({
+							199,
+							240,
+							253,
+							2,
+							251,
+							223,
+							9,
+							19,
+							19,
+							47,
+							41,
+							54,
+							64
+						})]
+						if bs == nil or bs[bg({
+							190,
+							230,
+							238,
+							240,
+							11,
+							9,
+							24
+						})] == nil or bs[bg({
+							198,
+							240,
+							235,
+							250,
+							217,
+							18,
+							22,
+							29,
+							23,
+							39,
+							52,
+							23,
+							61,
+							72,
+							69,
+							87,
+							83,
+							96,
+							102
+						})] == nil then
+							bm()
+						end
+						if bs:FromName(bs[bg({
+							190,
+							230,
+							238,
+							240,
+							11,
+							9,
+							24
+						})].Name) ~= bs[bg({
+							190,
+							230,
+							238,
+							240,
+							11,
+							9,
+							24
+						})] then
+							bm()
+						end
+						if bs:FromValue(bs[bg({
+							190,
+							230,
+							238,
+							240,
+							11,
+							9,
+							24
+						})].Value) ~= bs[bg({
+							190,
+							230,
+							238,
+							240,
+							11,
+							9,
+							24
+						})] then
+							bm()
+						end
+						local bt = Vector3.new(1, 2, 3)
+						if bt.X ~= 1 or bt.Y ~= 2 or bt.Z ~= 3 then
+							bm()
+						end
+						local bu = Vector2.new(2, 4)
+						if bu.X ~= 2 or bu.Y ~= 4 then
+							bm()
+						end
+						local bv = UDim.new(0.5, 10)
+						if bv.Scale ~= 0.5 or bv.Offset ~= 10 then
+							bm()
+						end
+						local bw = UDim2.new(0.5, 10, 0.25, 20)
+						if bw.X.Offset ~= 10 or bw.Y.Scale ~= 0.25 then
+							bm()
+						end
+						local bx = Instance.new(bg({
+							205,
+							228,
+							250,
+							244,
+							251,
+							11,
+							235,
+							32,
+							27
+						}))
+						local by = Instance.new(bg({
+							192,
+							243,
+							233,
+							252,
+							251
+						}))
+						by.Parent = bx
+						if by.Parent ~= bx or # bx:GetChildren() < 1 or not by:IsA(bg({
+							192,
+							243,
+							233,
+							252,
+							251
+						})) then
+							bm()
+						end
+						local bz = bx[bg({
+							189,
+							233,
+							241,
+							251,
+							250,
+							222,
+							8,
+							15,
+							23,
+							29
+						})]:Connect(function()
+						end)
+						local bA = by[bg({
+							189,
+							237,
+							247,
+							253,
+							251
+						})](by)
+						if bA == nil or bA.Name ~= by.Name then
+							bm()
+						end
+						bz[bg({
+							190,
+							234,
+							251,
+							242,
+							5,
+							11,
+							18,
+							16,
+							21,
+							45
+						})](bz)
+						if bz.Connected then
+							bm()
+						end
+						bA[bg({
+							190,
+							230,
+							251,
+							3,
+							8,
+							12,
+							29
+						})](bA)
+						by[bg({
+							190,
+							230,
+							251,
+							3,
+							8,
+							12,
+							29
+						})](by)
+						bx[bg({
+							190,
+							230,
+							251,
+							3,
+							8,
+							12,
+							29
+						})](bx)
+					end
+					if not bn(bq) then
+						bo()
+					end
+				end
+				bp = 1087
+			elseif bp == 1087 then
+				if bl(Instance) == bg({
+					238,
+					226,
+					234,
+					251,
+					251
+				}) or bl(Instance) == bg({
+					239,
+					244,
+					237,
+					1,
+					250,
+					254,
+					24,
+					12
+				}) then
+					bn(function()
+						local bq, br = bn(Instance.new, bg({
+							200,
+							240,
+							241,
+							2,
+							251
+						}))
+						if bq and br then
+							br.Seed = 5678
+							if br.Seed ~= 5678 then
+								bo()
+							end
+							br:Destroy()
+						end
+					end)
+				end
+				bp = 9999
+			end
+		end
+		local bq = am()
+		local br = be(bq, {})
+		bq = nil
+		am = nil
+		d = nil
+		aa = nil
+		ar = nil
+		ax = nil
+		aS = nil
+		aV = nil
+		a.N = nil
+		return br(...)
+	end,
+	[37] = (bit32 and bit32.rshift) or (bit and bit.rshift) or function(a, aa)
+		if aa < 0 then
+			return (a * 2 ^ (- aa)) % 4294967296
+		end
+		return math.floor(a % 4294967296 / 2 ^ aa)
+	end,
+	[11480] = 68,
+	[2964] = 97,
+	[9668] = 35,
+	nP = function(a, aa, ab)
+		for ac = ab[96], ab[29] do
+			aa[12][ac] = nil
+		end
+	end,
+	N = "IoubT0*vO,(HC=c50WHkWBI9RL2L7>[.lf(/rTh+dil%C`_LptSd&1@2?HHDr<9f4#;2OTr-t_h$#81W3;lKLAkkKiYIq,$m'peR5qRvOL@3jj$,XVn4+89NY'D5p##>)^RDIkTKIwEdl>a-5Ao=.tO5`LWN>O=6k3559`f<143w%Q7gmE3U9P(ew`pR)TR<9N[<T;='nEoMjV[iY@7p/YjOWXg,bpE59#;2OT3_Ynh0Yg_hW*Kb[AkkKi\\-CN,dMcO>XJNNC7W.#i(EFFtf01a8VI?c:Pdh4'MWjjJU)_gA2Ki'0/wwv\\aVwULb2oXGJke?vSvq4[t5ird`C^:vVQ;l%eG7NX>tDF8<D$e07SGs?VC9D9)2%R./=PY8B'`X1t+3Jk)8jsnbrUMc#)pwAV`>cb>hF5'[44U1-S17f//XdUY<psPjD#rJ`lv&J8^gEoWoAA,KaPcvAo,`%=GeZ$LWu3=gfd*RLC?,'deA8c[+P++1oeL0VQ@gc`gT_Y6a6X?]\\3L]`_;j#bS=L/cUOYlUrpW+k3R?aEC>[vX9%9YI2YN3#)r6o#<0,>TR<?G<,0B;-S1q5JnMjDK-&Pkr_C[VApe3,QL6m9-S-;qm2<aEIVrX32&_`V[_*WmZ%j4t6wEk'UtTp0<a9j#=FS>GsEJ7ktkSuFpAAU-Ug-Mq_F$_,>tU?#(7aCK1v>Go&J178tdd`12`tb2nPL,3:<#(+'Y:Yjf%_#2I_#Nf=WmFq`;5^[G'j[6]/`mD'S$sKA=>A0(E@28S)'G_?sHHfAGT9P[_0Y1:Sa4]5BYX8m4+@)em(oBrN8X'&d)]<]W1VNG5Tku'QvT5@$h.*UmeZpQCJ+qc\\C.Wo6K:>D+aG^[S^RbF\\3pPL;if&%&Do%B^j\\I;HN=91<tR*Y5Whl(G$>M\\gw^htdlQ7+oe,>'Q>1Nr,&b+hM1\\5Q(?TM5fel*QEbb+*bH+hdN83;bU,^]O$S*i56eMj2P$G[fKSgV7,9X-5%`=48.1vQ#CbsLd.IHvSq_?Ik@KRqPYbGP*rv9b*p/_?0sXd'm940P2URu+5)(o>'db$'RBl62$TX)l*i@G)X[s)2qM[l3dcnnZ5=Tc*Eq5WKUi9b3.lg57?KMs)_FO5lt`<(w+B8Ke?UcnJd]H]_,.t)t0NDTKroV_uTf;utOi#$'h]_j/In''j*GKjMW;>l5*mP3K-FU9v)R+0p\\[6>vcOT>=``?'re)7IoB#`?'_=d2V3[17stm\\IS%lU5t(]hBb+BSi*TZ,>aDH9/3EVH5t6*dEaVLcnVDRO*Tk*GhNPG[h@-K46K%TW_(pP?b'8'V:mRYb6BmWPEj`Y)ublC@:2^kL4lmaf>5sk8XL=e\\M1_HAqDY-vD?]U([i2;7m+iq_;E:0*&i:Vt7es8J,h[-`J#%lU5ttZep)E\\_*m5m:.kDH9/3_Iu$E=0?Hg=Okj4NqVQ5Jsw#np67C*-K46K%TW_(s*5//Kw]CZP.<X_DK_jT?=dV?*endWm]$&[h#LLHdkF'jkvtp`I_M?QG6S4'&7_Xk'.rdgb*Gudt>bVE$U+p$/CMaumdsO++)on.PiN&s][A@0Ng-`TnQ;=tU.[VdFQ+kXY;C*c)8O1FLOJ[XjIv)3:=MPAX4-lXQ^OfLjT6vSmW>*T%p*%UcZ/`,73]rhNte@>LHT@-1[T/i6wXe3/vl@v<i/inW^BKJ<.[gmc;[2j07gaj%jmcACf8K5mdrhW@#(N$90.\\i/Mc]ANg/7^2A'k<_;E1pPp3=9Y;F%Rqp@5O?M<+AbqcA6cI>#Q6^@-dI8eB8oV-1nmW@\\+b-)'db%;W47[=auY/IKMh_p0ZDKIQAl32g1m`%kkr*nHKrrc5EBm%oFE^,f+KT[<w*i&tZo/tlU`4X*6XTI<\\5=BrRoo)_MVKt$or.7%UhW/b%M\\_jQR\\kt7I,\\EKIY=?cI\\`SS1sC^k%,wr[*v`Ms+57,^5f=HTD#vtp^;M?0Ya(2udn8'wr;sY,?=^)r_9w4H3@K>h9S+9%rrd;)sYcb^MtsmKPqlV>*i,''Znk<63Ic/2,r3.N^I6GEUL_TgVDj1gKMl'b?K=i0d8RbE$M))1>b^$kI[R:X]TR*pcOE#F<9u)DYrEkhR\\)OYHPXjKpI<)7??BMms`@k29Pf5(6Pp+`m&sqfiKO>(rk>\\82K9AZFL8@]*K6)A?J\\U*.+iw>T_(<,?#6bwrdOGdDSB(=:H8mJ.Kk:+?Cm=JUPG=8XY(0.[N&-u^:lB`0`L%W;W6HQWPlUAT&.n/4^d6\\.n#-_NQgoHIf=C5>CkN;A:Gh7_=V.)?QKj/omb%At#Ce>H3@YQI_N,+%So0mH=A#jQ+V*5hVM0p_JLalk;aS38`\\hA^Ad^LEA`*P,;K7B<W'(_*v.?H1'Fhs0(/JgE&khFe@K$0aXD??;K`^AO6;U#Uj0'7T(YSY5#->P04b,(YYoe.Q=F,i*cC>+LDCT6Y<HU^')pBo^CHwl6b8fOmiG_aG6S2KT.X*\\pH<U?K+rSjLB_;150hBe-=O4Ink(,^NYRUJdr=8J<jpMf/wwv%(/^hT1DG$8:GJ%&IDQXqWATrmJlWn%'S=Q-:;2+a,loUfO=7?#pD1-'%\\B4l28F.P_b_LYf/?VgY<G)BJ3^s'/Gc./GtL4JD]W/abHJJf;ES(QAowb];/BpK7QOi*Rpb1L2\\n7fNuf:ld$PnKL43vW'Z,fB%XpNuG^?DqPmSfqPiUup]h3)efXab$540t6t&<f7i6l2s7$=)8T+9*b<jcu8EK#^vAQjO`0+KQFLDCT6Y<G)Bn@1YuVOie-1ubTm/tQ=KR$u48ApvH$eO50&ghMd:ptBPO?Ofba,*3B`sRLvIA?rlc^Fnn8G1DccOfYMLTf^mBWs1\\JAvsPKc<acl&D1<J`kKf)re@g?mf*.-\\@Uv4\\n8Te1utPer/.Od)#B3$IkGQLW2eW/l5YX5'f8uD8dqoZfa>D@D]W/ak2_V+i?ED&mN>TE:\\Y3Gf-[=b50hBAFw+/lk^pbMAiFfoABI=kFl[:TPhHgu`K`#nBv7EXA_PBoQEGUNKr`Q**V>1e7Q?/g'.+/htCJb:jQbb$.c(<<:EH$A=[1&=_b_InJ)wL:e0+,5maf=tIZB@kQBXW?OO>E:S^7UYs/<I^L=T>vmXBRW-2-:-R5/lb($?h.'RKE+-'T?7ShrwPu/ZpNjg9:Xed?ece'J+?u$F.HW58]wV9&A`c.#;57@EvM$<HOEAa[Z;6%$2+-3$WTk)TBUj.b;wWGJwP)P6$Bm_1glptoi*8dlR9J48DZF23`^NcnrH*wf,,o98$OfRfj?RZ95gISS+V/9mS]XQic>Q'Z$43K,sh[WYW[/wwuV`l)ft5)p&kV@A9v0hb,_->#ZE*j2SVHqIVeK_k5J9Ob[p*tHO[VVs;b)bu;m*w[hO:r;jJV?6Hc';0<C-AJ=Prf2t-^[I3Z&CP%QHL@%hhQAEl_%Q-;*aW4L_((Drh[W>p-=O2aS'DAmSumn[@@YuA2BoS(PT]KEVZnFQIgun,^jpUP(9ZJwtcrSYrba96[]INZ;)6)p^$(Om-^a[j-MDQv%\\B2+7Lj+G=HXBA2?0_IeCp/a7BE5Y'@;9)KtSe2[/)VKjatGgDGFwpeT1t\\GR2*k[Qm&A&#_3ML%,2^YgVVpji5Yq25I1wKpU8?f$7O/tIJ-4d9QC^\\wS=B%c1JA)#*UPI/;q?coifgS$9jw^Ga%:5#+fVUBpZJM*`N+AMQB85-A_3XN0^;11]OAf\\3H0*mP3KF`nlC.C7fic:b]^?l*vN6v)(EgXAAG[wH92:2UL0HwY/C3K:pUG/cr6hJR0A*@0rn<FIB;`#(Iq:G,?q]eu;5fpf./ITE7XSv#1l>h/MgL8GDFets_6^.qAkr,k,]1M`$c5*k9.hX9`lSFmF/Um/C[s:2'9CBhH`r:a>p2Fdmhk<q[THNkKEZ::=Dcdf=+`>D_hmpVZ5dBipN55sA'bn:e>a0?P1I`?L)Y.hPVgfOV>NB.4#LA%w,%]>+'&2_p.?UDNSRJ_$N?=(:[Z:A6fk$IF/-U47]-`pbDUB\\'=*kb;\\G.b'k2umgX[$H3d0/LEDEY6bGtZqAqt-N(jcOT>=:]\\vtV_264etIfw@eSUhV`+G.n5A?ZeqSl9e\\a9EM8TC5%Kd+Ed#&6v*_m.<CRAe.*e'Wp**?>tm`t1GV_N=wP9p`(en,LfL$KlHMOl_Uf`HReoGC]w0+R?D0HaL@52LZpj4tYBQN$7?VP)@J#*-A^p4g?hpYUdqMS?OGaY3KckrLC5?Ok;MC;#c_DVgotqLf3u)9D1V#2/<c:(+hrV2LsjqFglm",
+	[2515] = 104,
+	[3524] = 163,
+	[1296] = 2097152,
+	[10981] = 61,
+	[9543] = 72,
+	[8271] = 139,
+	[8688] = 94,
+	SP = function(a, aa, ab)
+		aa[3] = (aa[3] + aa[16]) % 4294967296
+		return 2, aa[12][ab[96] ]
+	end,
+	[5364] = 24,
+	[10583] = 9,
+	[7715] = 69,
+	n = function(a, aa, ab)
+		aa[11] = aa[11] or {}
+		aa[10] = aa[10] or {}
+		for ac = 0, (aa[20] or (# aa[10] - 1)) do
+			if (ac >= (aa[9] or 0)) then
+				aa[11][ac - (aa[9] or 0)] = aa[10][ac + 1]
+			else
+				aa[12][ac] = aa[10][ac + 1]
+			end
+		end
+	end,
+	[10870] = 13,
+	[11226] = 23,
+	[3685] = 226,
+	fP = function(a, aa, ab)
+		aa[16] = a[385]
+		aa[17] = aa[17] + 1
+		return 1
+	end,
+	[9382] = 134,
+	[4294] = 205,
+	[7481] = 157,
+	[3845] = 65536,
+	B = function(a, aa, ab)
+		aa[1] = aa[28][173]
+	end,
+	[245] = (math and math.abs) or math.abs,
+	[297] = 127,
+	[3] = table.pack or function(...)
+		return {
+			n = select('#', ...),
+			...
+		}
+	end,
+	XP = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[8](aa[6][ab[29] ], {})
+	end,
+	[3733] = 8,
+	[10130] = 252,
+	[7681] = 50,
+	[1975] = 151,
+	[249] = (bit32 and bit32.band) or (bit and bit.band) or function(a, aa)
+		local ab, ac = 0, 1
+		while a > 0 and aa > 0 do
+			if a % 2 == 1 and aa % 2 == 1 then
+				ab = ab + ac
+			end
+			a = math.floor(a / 2)
+			aa = math.floor(aa / 2)
+			ac = ac * 2
+		end
+		return ab
+	end,
+	[6] = (table and table.clear) or function(...)
+	end,
+	[56] = tostring,
+	[9675] = 14,
+	Q = function(a, aa, ab)
+		local ac = ab[96]
+		aa[12][ac](a[23](aa[12], ac + 1, ab[29]))
+	end,
+	Ss = function(a, aa, ab)
+		local ac = ab[96]
+		aa[12][ac] = aa[12][ac](aa[12][ac + 1])
+	end,
+	[9219] = 164,
+	[1830] = 256,
+	[7942] = 31,
+	gs = function(a, aa, ab)
+		aa[9] = aa[28][61]
+	end,
+	ds = function(a, aa, ab)
+		aa[2] = {}
+	end,
+	[296] = 20,
+	[10549] = 150,
+	[3143] = 48,
+	eP = function(a, aa, ab)
+		aa[21] = a[30]()
+	end,
+	[5652] = 74,
+	ys = {},
+	[2750] = 193,
+	[114] = (bit32 and bit32.lshift) or (bit and bit.lshift) or function(a, aa)
+		if aa < 0 then
+			return math.floor(a % 4294967296 / 2 ^ (- aa))
+		end
+		return (a * 2 ^ aa) % 4294967296
+	end,
+	[28] = table.create or function(a, aa)
+		local ab = {}
+		for ac = 1, a do
+			ab[ac] = aa
+		end
+		return ab
+	end,
+	[74] = (bit and bit.bor) or (bit32 and bit32.bor) or function(a, aa)
+		local ab, ac = 0, 1
+		while a > 0 or aa > 0 do
+			if a % 2 == 1 or aa % 2 == 1 then
+				ab = ab + ac
+			end
+			a = math.floor(a / 2)
+			aa = math.floor(aa / 2)
+			ac = ac * 2
+		end
+		return ab
+	end,
+	[119] = coroutine.running,
+	RR = function(a, aa, ab)
+		local ac = ab[96]
+		local ad = {
+			aa[12][ac](aa[12][ac + 1])
+		}
+		local ae = 0
+		for af = ac, ab[186] do
+			ae = ae + 1
+			aa[12][af] = ad[ae]
+		end
+	end,
+	[3868] = 21,
+	[9462] = 210,
+	[99] = (buffer and buffer.readu8) or string.byte,
+	[9957] = 280,
+	[5931] = 40,
+	[7069] = 199,
+	sP = function(a, aa, ab)
+		aa[12][ab[96] ][aa[1][ab[29] ] ] = aa[12][ab[186] ]
+	end,
+	[68] = typeof or type,
+	[1085] = 281,
+	[2719] = 57,
+	[3226] = 192,
+	[1040] = 28,
+	[9574] = 153,
+	[8804] = 242,
+	[47] = (bit32 and bit32.countrz) or function(...)
+		return 0
+	end,
+	[11946] = 255,
+	S = function(a, aa, ab)
+		aa[6] = aa[28][50]
+	end,
+	[601] = 314,
+	[11431] = 10,
+	AP = function(a, aa, ab)
+		aa[10] = aa[25]
+	end,
+	X = function(a, aa, ab)
+		aa[12][ab[96] ][aa[12][ab[29] ] ] = aa[12][ab[186] ]
+	end,
+	[19] = (buffer and buffer.writef64) or function(...)
+	end,
+	[847] = 76,
+	Is = {},
+	[9374] = 312,
+	[3616] = 45,
+	[5808] = 96,
+	Ws = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[19]
+	end,
+	[5537] = 38,
+	Os = function(a, aa, ab)
+		aa[12] = {}
+		aa[10] = aa[10] or {}
+		for ac = 0, (aa[20] or (# aa[10] - 1)) do
+			if ac < (aa[9] or 0) then
+				aa[12][ac] = aa[10][ac + 1]
+			else
+				break
+			end
+		end
+	end,
+	Z = function(a, aa, ab)
+		if aa[12][ab[96] ] then
+			aa[16] = aa[16] + 1
+		else
+			aa[16] = ab[29]
+		end
+	end,
+	[352] = 83,
+	[771] = 136,
+	w = function(a, aa, ab)
+		aa[12][ab[96] ] = a[114](aa[12][ab[29] ], aa[12][ab[186] ])
+	end,
+	[4562] = 213,
+	[4685] = 225,
+	[4810] = 41,
+	[149] = select,
+	[125] = (buffer and buffer.readstring) or function(...)
+		return ''
+	end,
+	[5542] = 19,
+	[7817] = 179,
+	[3643] = 82,
+	[1062] = 237,
+	EE = function(a, aa, ab)
+		aa[26] = (aa[20] or 0) - (aa[9] or 0) + 1
+	end,
+	[9361] = 299,
+	bs = function(a, aa, ab)
+		aa[12][ab[96] ] = a[249](aa[12][ab[29] ], aa[12][ab[186] ])
+	end,
+	[8082] = 75,
+	[3729] = 222,
+	[11025] = 93,
+	[4276] = 51,
+	C = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[21]
+	end,
+	[9737] = 37,
+	F = function(a, aa, ab)
+		aa[12][ab[96] ] = {}
+	end,
+	[66] = function(a, aa)
+		return math.floor(a / aa)
+	end,
+	[9946] = 211,
+	[8773] = 172,
+	[23] = unpack or (table and table.unpack),
+	[10072] = 79,
+	ZP = function(a, aa, ab)
+		aa[12][ab[96] ] = ab[29]
+	end,
+	[7823] = 178,
+	[1842] = 167,
+	[1480] = 29,
+	[617] = 228,
+	[2603] = 207,
+	[418] = 133,
+	[11294] = 189,
+	[6625] = 236,
+	[5238] = 55,
+	[60] = next,
+	[8215] = 53,
+	[5956] = 159,
+	[4708] = 107,
+	[26] = (UDim2 and UDim2.new) or function(...)
+	end,
+	Xs = function(a, aa, ab)
+		aa[21] = aa[12][ab[96] ]
+	end,
+	[11370] = 44,
+	[10470] = 218,
+	qP = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[12][ab[29] ]
+	end,
+	[4910] = 238,
+	[253] = (string and string.char),
+	[5716] = 11,
+	[6896] = 90,
+	[17] = assert,
+	[6113] = 18,
+	[8530] = 67,
+	[5793] = 22,
+	[11219] = 614125,
+	[48] = setmetatable,
+	MF = function(a, aa, ab)
+		aa[16] = ab[29]
+	end,
+	[104] = (bit32 and bit32.bnot) or (bit and bit.bnot) or function(a)
+		return (- 1 - a) % 4294967296
+	end,
+	[83] = (buffer and buffer.tostring) or tostring,
+	[10272] = 197,
+	[30] = (function()
+		local a
+		return function()
+			if a then
+				return a
+			end
+			local aa = type(type)
+			local ab = (aa == type(getfenv) and getfenv()) or _ENV or _G or {}
+			local ac = (aa == type(getgenv) and getgenv())
+			a = setmetatable({}, {
+				[string.char(95, 95, 105, 110, 100, 101, 120)] = function(ad, ae)
+					if ae == nil then
+						return nil
+					end
+					local af = rawget(ad, ae)
+					if af ~= nil then
+						return af
+					end
+					if ac then
+						local ag = ac[ae]
+						if ag ~= nil then
+							return ag
+						end
+					end
+					if ab then
+						local ag = ab[ae]
+						if ag ~= nil then
+							return ag
+						end
+					end
+					if _G then
+						local ag = _G[ae]
+						if ag ~= nil then
+							return ag
+						end
+					end
+					return nil
+				end,
+				[string.char(95, 95, 110, 101, 119, 105, 110, 100, 101, 120)] = function(ad, ae, af)
+					if ae ~= nil then
+						rawset(ad, ae, af)
+						if ac then
+							pcall(function()
+								ac[ae] = af
+							end)
+						end
+						if ab then
+							pcall(function()
+								ab[ae] = af
+							end)
+						end
+						if _G then
+							pcall(function()
+								_G[ae] = af
+							end)
+						end
+					end
+				end
+			})
+			return a
+		end
+	end)(),
+	[3154] = 43,
+	[2620] = 327,
+	jP = function(a, aa, ab)
+		local ac = ab[96]
+		local ad = ab[186]
+		local ae = ac + 2
+		local af = aa[12][ac]
+		if type(af) == 'table' then
+			aa[12][ac] = next
+			aa[12][ac + 1] = af
+			aa[12][ae] = nil
+		end
+		local ag = {
+			aa[12][ac](aa[12][ac + 1], aa[12][ae])
+		}
+		for ah = 1, ad do
+			aa[12][ae + ah] = ag[ah]
+		end
+		local ah = aa[12][ac + 3]
+		if ah ~= nil then
+			aa[12][ae] = ah
+		else
+			aa[16] = aa[16] + 1
+		end
+	end,
+	[9399] = 4294967296,
+	[397] = 12,
+	[3283] = 70,
+	[217] = (table and table.concat),
+	[822] = 16,
+	[110] = string.format,
+	Ps = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[1][ab[29] ] ^ aa[12][ab[186] ]
+	end,
+	[7896] = 216,
+	wP = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[4]
+	end,
+	[474] = 105,
+	JP = function(a, aa, ab)
+		local ac = ab[96]
+		local ad = ab[29]
+		aa[11] = aa[11] or {}
+		for ae = ac, ad do
+			aa[12][ae] = aa[11][ae - ac]
+		end
+	end,
+	[6455] = 98,
+	ts = function(a, aa, ab)
+		aa[11] = aa[11] or {}
+		aa[10] = aa[10] or {}
+		for ac = 0, (aa[20] or (# aa[10] - 1)) do
+			if (ac >= (aa[9] or 0)) then
+				aa[11][ac - (aa[9] or 0)] = aa[10][ac + 1]
+			else
+				aa[12][ac] = aa[10][ac + 1]
+			end
+		end
+	end,
+	[85] = (vector and vector.create) or function(...)
+	end,
+	[7764] = 289,
+	[8971] = 99,
+	[6074] = 135,
+	[61] = (buffer and buffer.writebits) or function(...)
+	end,
+	[7888] = 215,
+	oP = function(a, aa, ab)
+		aa[12] = {}
+	end,
+	[33] = (math and math.floor) or math.floor,
+	[3566] = 5,
+	[3163] = 122,
+	[6964] = 15,
+	KP = function(a, aa, ab)
+		aa[12][ab[96] ]()
+	end,
+	[6887] = 247,
+	[4084] = 80,
+	[9710] = 118,
+	[0] = (buffer and buffer.readf32) or function(...)
+		return 0
+	end,
+	[71] = rawset,
+	[1325] = 2,
+	[5601] = 73,
+	[811] = 185,
+	[8065] = 315,
+	Gs = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[1]
+	end,
+	[6496] = 4,
+	dP = function(a, aa, ab)
+		aa[16] = a[385]
+		aa[17] = aa[17] + 1
+		return 1
+	end,
+	[204] = (bit32 and bit32.bxor) or (bit and bit.bxor) or function(a, aa)
+		local ab, ac = 1, 0
+		while a > 0 and aa > 0 do
+			local ad, ae = a % 2, aa % 2
+			if ad ~= ae then
+				ac = ac + ab
+			end
+			a, aa, ab = (a - ad) / 2, (aa - ae) / 2, ab * 2
+		end
+		if a < aa then
+			a = aa
+		end
+		while a > 0 do
+			local ad = a % 2
+			if ad > 0 then
+				ac = ac + ab
+			end
+			a, ab = (a - ad) / 2, ab * 2
+		end
+		return ac
+	end,
+	js = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[21][aa[1][ab[29] ] ]
+	end,
+	[6970] = 36,
+	[5102] = 66,
+	VP = function(a, aa, ab)
+		aa[11] = {}
+	end,
+	hs = function(a, aa, ab)
+		local ac = ab
+		aa[12][ab[96] ] = function()
+			return ac[96]
+		end
+	end,
+	[7179] = 113,
+	h = function(a, aa, ab)
+		local ac = ab[96]
+		aa[12][ac] = aa[12][ac]()
+	end,
+	[3442] = 232,
+	[90] = (string and string.byte) or (buffer and buffer.readu8),
+	[9186] = 152,
+	[9402] = 171,
+	[4755] = 248,
+	Ms = function(a, aa, ab)
+		if (aa[12][ab[29] ] == aa[1][ab[186] ]) then
+			aa[16] = aa[16] + 1
+		end
+	end,
+	[122] = rawget,
+	[5498] = 6,
+	Bs = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[29]
+	end,
+	[10737] = 147,
+	[7238] = 166,
+	[385] = 9999999,
+	[6900] = 64,
+	[4563] = 87,
+	[9801] = 7,
+	[5150] = 212,
+	[6319] = 71,
+	[49] = (UDim and UDim.new) or function(...)
+	end,
+	[6793] = 52200625,
+	[72] = (Vector2 and Vector2.new) or function(...)
+	end,
+	[50] = (buffer and buffer.writei8) or function(...)
+	end,
+	[69] = coroutine.resume,
+	[11367] = 200,
+	[7895] = 300,
+	[1425] = 115,
+	[9579] = 144,
+	[5823] = 187,
+	Us = function(a, aa, ab)
+		aa[18] = - 1
+	end,
+	g = function(a, aa, ab)
+		local ac = ab[96]
+		aa[12][ac] = aa[12][ac](a[23](aa[12], ac + 1, ab[29]))
+	end,
+	ps = {},
+	[11877] = 3,
+	TF = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[1][ab[29] ]
+	end,
+	[11651] = 125,
+	[10253] = 128,
+	[8810] = 286,
+	[10297] = 1,
+	[9684] = 169,
+	[4597] = 16777216,
+	[8836] = 243,
+	[11275] = 59,
+	[1278] = 155,
+	[2966] = 39,
+	[9823] = 112,
+	[8953] = 124,
+	[86] = (buffer and buffer.readbits) or function(...)
+		return 0
+	end,
+	t = function(a, aa, ab)
+		aa[3] = (aa[3] + aa[16]) % 4294967296
+		return 1
+	end,
+	[1927] = 221,
+	W = function(a, aa, ab)
+		aa[26] = (aa[20] or 0) - (aa[9] or 0) + 1
+	end,
+	[2427] = 7225,
+	xP = function(a, aa, ab)
+		aa[12][ab[96] ] = a[114](aa[12][ab[29] ], aa[1][ab[186] ])
+	end,
+	rP = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[12][ab[29] ][aa[1][ab[186] ] ]
+	end,
+	[24] = function(...)
+		return {
+			...
+		}, select('#', ...)
+	end,
+	[6807] = 30,
+	[1805] = 16384,
+	[6924] = 32,
+	[489] = 101,
+	[10129] = 245,
+	[4769] = 85,
+	tP = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[12][ab[29] ][aa[12][ab[186] ] ]
+	end,
+	MP = function(a, aa, ab)
+		aa[20] = aa[7]
+	end,
+	[1955] = 0,
+	[11538] = 33,
+	[5061] = 92,
+	[6591] = 108,
+	[9391] = 123,
+	[9549] = 235,
+	[16] = (bit32 and bit32.countlz) or function(...)
+		return 0
+	end,
+	[11292] = 111,
+	[143] = (bit32 and bit32.bnot) or (bit and bit.bnot) or function(a)
+		return (- 1 - a) % 4294967296
+	end,
+	Zs = function(a, aa, ab)
+		aa[12][ab[96] ] = aa[12]
+	end,
+	[11] = string.gmatch,
+	[43] = tonumber,
+	[7791] = 52,
+	l = function(a, aa, ab)
+	end
+}, {}):hP(...)
